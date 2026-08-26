@@ -1,0 +1,41 @@
+# ============================================================
+# PruTech website — public marketing site only.
+# The employee portal demo and working files stay local.
+# ============================================================
+
+# --- internal documents & scratch ---
+_proposal/
+_unused/
+logo-intro-demo.html
+
+# --- employee portal demo (not part of the public site) ---
+employee-login.html
+employee-home.html
+jira.html
+jira-internal.html
+sharepoint.html
+js/kb.js
+js/assistant.js
+js/jira.js
+js/sharepoint.js
+css/jira.css
+css/sharepoint.css
+css/assistant.css
+
+# --- img/: allowlist, because only 6 of 18 files are used ---
+img/*
+!img/prutech-logo-white.svg
+!img/salesforce-hero.jpg
+!img/Flying-Agentforce-Agent.png
+!img/1781765223799.mp4
+!img/intro-reveal.mp4
+!img/intro-reveal.webm
+
+# --- unused duplicate brief (no page links to it) ---
+SF Projects Data/PruTech_SolutionBrief_EvidenceTrackingandManagement 1.pdf
+
+# --- OS / editor noise ---
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/

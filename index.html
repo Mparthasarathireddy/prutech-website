@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PruTech — Dependable Technology, Software &amp; Cloud Solutions</title>
+  <meta name="description" content="PruTech Solutions — Enterprise software engineering, cloud, data, AI and Salesforce development. The Right Team. The Right Outcomes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/intro.css" />
+  <script src="js/intro.js"></script>
+  <noscript><style>.pt-intro{display:none}</style></noscript>
+</head>
+<body>
+
+  <!-- ===== BRAND INTRO ===== -->
+  <div class="pt-intro" id="ptIntro" role="presentation">
+    <video class="pt-intro__video" muted playsinline autoplay preload="auto"
+           disablepictureinpicture controlslist="nodownload noplaybackrate noremoteplayback">
+      <source src="img/intro-reveal.webm" type="video/webm" />
+      <source src="img/intro-reveal.mp4" type="video/mp4" />
+    </video>
+    <button class="pt-intro__skip" type="button" aria-label="Skip intro">Skip</button>
+  </div>
+
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">
+        <span class="nav__logo-mark">Pru</span><span class="nav__logo-mark nav__logo-mark--accent">Tech</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#services">Services</a>
+        <a href="#showcase">Platform</a>
+        <a href="#process">Process</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="login.html" class="btn btn--sm">Login</a>
+      <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <canvas class="hero__canvas" id="heroCanvas"></canvas>
+    <div class="hero__grid"></div>
+    <div class="hero__glow"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">The Right Team. The Right Outcomes.™</p>
+      <h1 class="hero__title">
+        We build the software<br />
+        <span class="grad">the world depends on.</span>
+      </h1>
+      <p class="hero__sub">
+        Enterprise engineering, cloud, data &amp; AI for government agencies —
+        delivered by a team that's done it before.
+      </p>
+      <div class="hero__cta">
+        <a href="#showcase" class="btn">See it in motion</a>
+        <a href="#services" class="btn btn--ghost">Explore services</a>
+      </div>
+    </div>
+
+    <!-- Floating code window -->
+    <div class="hero__code" id="codeCard">
+      <div class="code__bar">
+        <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+        <span class="code__file" id="codeFile">eligibility_service.py</span>
+      </div>
+      <pre class="code__body"><code id="codeStream"></code></pre>
+    </div>
+
+    <a href="#services" class="hero__scroll">Scroll<span class="hero__scroll-line"></span></a>
+  </section>
+
+  <!-- ===== CASE STUDY SLIDESHOW (TOP) ===== -->
+  <section class="work" id="work">
+    <div class="work__head reveal">
+      <p class="kicker kicker--green">Featured Work · Case Studies</p>
+      <h2 class="h2 h2--light">Expertise that yields lasting outcomes.</h2>
+      <p class="work__intro">Mission-driven outcomes for federal, state and local agencies — modernizing the secure systems citizens rely on every day.</p>
+    </div>
+
+    <div class="slider" id="slider" aria-roledescription="carousel">
+      <div class="slider__track" id="sliderTrack"><!-- slides injected by JS --></div>
+
+      <button class="slider__arrow slider__arrow--prev" id="slidePrev" aria-label="Previous case study">
+        <svg viewBox="0 0 24 24" width="26" height="26"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="slider__arrow slider__arrow--next" id="slideNext" aria-label="Next case study">
+        <svg viewBox="0 0 24 24" width="26" height="26"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <div class="slider__dots" id="slideDots"></div>
+    </div>
+  </section>
+
+  <!-- ===== LOGO TICKER ===== -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <span>AWS</span><span>Azure</span><span>Java</span><span>.NET</span><span>React</span>
+      <span>Kubernetes</span><span>Snowflake</span><span>Python</span><span>DevSecOps</span><span>Generative AI</span>
+      <span>AWS</span><span>Azure</span><span>Java</span><span>.NET</span><span>React</span>
+      <span>Kubernetes</span><span>Snowflake</span><span>Python</span><span>DevSecOps</span><span>Generative AI</span>
+    </div>
+  </div>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section" id="services">
+    <div class="section__head reveal">
+      <p class="kicker">Our Services</p>
+      <h2 class="h2">Dependable technology solutions, end to end.</h2>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="card__icon">&lt;/&gt;</div>
+        <h3>Enterprise Software Engineering</h3>
+        <p>Custom applications, CRM, and mobile builds that support business goals and surface the insights that drive decisions.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon">☁</div>
+        <h3>Infrastructure &amp; Platform Innovation</h3>
+        <p>Cloud services, system integration and DevOps automation that right-size resources and accelerate performance.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon">⚡</div>
+        <h3>Data &amp; Analytics</h3>
+        <p>Data engineering, BI, ML and governance that turn raw data into a reliable, decision-ready asset.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon">🛡</div>
+        <h3>Information Security</h3>
+        <p>Cybersecurity, data privacy and SOC services that protect business assets in real time.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon">✦</div>
+        <h3>Artificial Intelligence</h3>
+        <p>Generative AI, computer vision and text analytics that drive transformation and human-AI collaboration.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon">◈</div>
+        <h3>Technology Consulting</h3>
+        <p>Digital transformation, software consulting and agile delivery from experienced advisors.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== SALESFORCE / CODE SHOWCASE ===== -->
+  <section class="showcase" id="showcase">
+    <div class="showcase__inner">
+      <div class="showcase__text reveal">
+        <p class="kicker kicker--light">Built for Government</p>
+        <h2 class="h2 h2--light">From code to secure deployment — engineered live.</h2>
+        <p class="showcase__lead">
+          As an end-to-end IT solutions provider, we design, build and ship
+          mission-critical platforms for federal, state and local agencies —
+          across any technology stack. Watch a typical release take shape:
+          infrastructure as code, security scans and a compliant CI/CD pipeline.
+        </p>
+        <ul class="ticks">
+          <li>Cloud modernization &amp; system integration</li>
+          <li>Secure DevSecOps &amp; infrastructure as code</li>
+          <li>Automated testing &amp; compliant CI/CD deployment</li>
+          <li>24/7 managed support &amp; optimization</li>
+        </ul>
+        <a href="#contact" class="btn">Start a project</a>
+      </div>
+
+      <div class="showcase__visual reveal">
+        <div class="editor">
+          <div class="editor__bar">
+            <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            <span class="editor__tabs"><b>pipeline.yml</b> · main.tf</span>
+          </div>
+          <div class="editor__body">
+            <pre class="editor__code"><code id="editorStream"></code></pre>
+            <div class="editor__terminal" id="terminal">
+              <span class="t-prompt">$ ci deploy --env gov-cloud</span>
+            </div>
+          </div>
+        </div>
+        <div class="floaty floaty--1">Deploy ✓</div>
+        <div class="floaty floaty--2">FedRAMP ready</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="section" id="process">
+    <div class="section__head reveal">
+      <p class="kicker">Our Process</p>
+      <h2 class="h2">Changing uncertainty to dependability.</h2>
+    </div>
+    <div class="process">
+      <div class="process__step reveal">
+        <span class="process__num">01</span>
+        <h3>Thinking &amp; Problem Solving</h3>
+        <p>Decades of experience and thousands of hours of problem solving go into making future-proof technology.</p>
+      </div>
+      <div class="process__step reveal">
+        <span class="process__num">02</span>
+        <h3>Development Lifecycle</h3>
+        <p>Delivering technical solutions is in our DNA — no surprise endings when it comes to product development.</p>
+      </div>
+      <div class="process__step reveal">
+        <span class="process__num">03</span>
+        <h3>Engagement &amp; Experience</h3>
+        <p>We know outcomes before the build starts, creating experiences that end with powerful impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== METRICS ===== -->
+  <section class="metrics">
+    <div class="metric reveal"><span class="metric__num" data-to="20">0</span><span class="metric__plus">+</span><p>Years delivering</p></div>
+    <div class="metric reveal"><span class="metric__num" data-to="500">0</span><span class="metric__plus">+</span><p>Projects shipped</p></div>
+    <div class="metric reveal"><span class="metric__num" data-to="98">0</span><span class="metric__plus">%</span><p>Avg. test coverage</p></div>
+    <div class="metric reveal"><span class="metric__num" data-to="5">0</span><span class="metric__plus"> </span><p>US locations</p></div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="cta" id="contact">
+    <div class="reveal">
+      <h2 class="cta__title">Let's build something dependable.</h2>
+      <p class="cta__sub">Tell us about your project — we'll bring the right team.</p>
+      <a href="mailto:Partha.Marreddy@prutech.com" class="btn btn--lg">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__cols">
+      <div class="footer__brand">
+        <span class="nav__logo-mark">Pru</span><span class="nav__logo-mark nav__logo-mark--accent">Tech</span>
+        <p>The Right Team. The Right Outcomes.™</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#">About</a><a href="#">Careers</a><a href="#">Partnerships</a><a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="#services">Software Engineering</a><a href="#services">Cloud &amp; Platform</a><a href="#services">Data &amp; AI</a><a href="#services">Cybersecurity</a>
+      </div>
+      <div>
+        <h4>Locations</h4>
+        <a href="#">Iselin, NJ</a><a href="#">New York, NY</a><a href="#">Charlotte, NC</a><a href="#">Washington, D.C.</a>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 PruTech Solutions, Inc. All rights reserved. · Privacy Policy</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

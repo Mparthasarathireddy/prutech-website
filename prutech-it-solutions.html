@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PruTech IT Solutions — Government Technology, Cloud &amp; AI</title>
+  <meta name="description" content="PruTech IT Solutions — enterprise software engineering, cloud modernization, data, AI and cybersecurity for federal, state and local government agencies. The Right Team. The Right Outcomes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/brand.css" />
+  <link rel="stylesheet" href="css/hero-sphere.css" />
+  <link rel="stylesheet" href="css/intro.css" />
+  <script src="js/intro.js"></script>
+  <noscript><style>.pt-intro{display:none}</style></noscript>
+</head>
+<body>
+
+  <!-- ===== BRAND INTRO ===== -->
+  <div class="pt-intro" id="ptIntro" role="presentation">
+    <video class="pt-intro__video" muted playsinline autoplay preload="auto"
+           disablepictureinpicture controlslist="nodownload noplaybackrate noremoteplayback">
+      <source src="img/intro-reveal.webm" type="video/webm" />
+      <source src="img/intro-reveal.mp4" type="video/mp4" />
+    </video>
+    <button class="pt-intro__skip" type="button" aria-label="Skip intro">Skip</button>
+  </div>
+
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo nav__logo--img">
+        <img src="img/prutech-logo-white.svg" alt="PruTech IT Solutions" />
+      </a>
+      <nav class="nav__links">
+        <a href="#services">Services</a>
+        <a href="salesforce.html">Salesforce</a>
+        <a href="#process">Process</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="login.html" class="btn btn--sm">Login</a>
+      <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero hero--sphere" id="top">
+    <canvas class="hero__canvas" id="heroCanvas"></canvas>
+    <canvas class="hero__sphere" id="heroSphere"></canvas>
+    <div class="hero__scrim"></div>
+    <div class="hero__grid"></div>
+    <div class="hero__glow"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow tagline"><em>The Right Team.</em> <strong>The Right Outcomes.</strong>™</p>
+      <h1 class="hero__title">
+        We build the software<br />
+        <span class="grad">government depends on.</span>
+      </h1>
+      <p class="hero__sub">
+        Enterprise engineering, cloud, data &amp; AI for federal, state and local
+        agencies — delivered by a team that's done it before.
+      </p>
+      <div class="hero__cta">
+        <a href="#work" class="btn">See it in motion</a>
+        <a href="#services" class="btn btn--ghost">Explore services</a>
+      </div>
+    </div>
+
+    <a href="#services" class="hero__scroll">Scroll<span class="hero__scroll-line"></span></a>
+  </section>
+
+  <!-- ===== CASE STUDY SLIDESHOW (TOP) ===== -->
+  <section class="work" id="work">
+    <div class="work__head reveal">
+      <p class="kicker kicker--green">Featured Work · Case Studies</p>
+      <h2 class="h2 h2--light">Expertise that yields lasting outcomes.</h2>
+      <p class="work__intro">Mission-driven outcomes for federal, state and local agencies — modernizing the secure systems citizens rely on every day.</p>
+    </div>
+
+    <div class="slide-filters" id="slideFilters" role="tablist" aria-label="Filter case studies by sector"></div>
+
+    <div class="slider" id="slider" aria-roledescription="carousel">
+      <div class="slider__track" id="sliderTrack"><!-- slides injected by JS --></div>
+
+      <button class="slider__arrow slider__arrow--prev" id="slidePrev" aria-label="Previous case study">
+        <svg viewBox="0 0 24 24" width="26" height="26"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="slider__arrow slider__arrow--next" id="slideNext" aria-label="Next case study">
+        <svg viewBox="0 0 24 24" width="26" height="26"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <div class="slider__dots" id="slideDots"></div>
+    </div>
+  </section>
+
+  <!-- ===== LOGO TICKER ===== -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <span>Salesforce</span><span>AWS</span><span>Azure</span><span>Microsoft 365</span><span>Microsoft Dynamics</span>
+      <span>Custom Databases</span><span>Custom Development</span><span>Solution Design &amp; Delivery</span><span>Cloud Modernization</span><span>Cybersecurity &amp; Compliance</span>
+      <span>Salesforce</span><span>AWS</span><span>Azure</span><span>Microsoft 365</span><span>Microsoft Dynamics</span>
+      <span>Custom Databases</span><span>Custom Development</span><span>Solution Design &amp; Delivery</span><span>Cloud Modernization</span><span>Cybersecurity &amp; Compliance</span>
+    </div>
+  </div>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section" id="services">
+    <div class="section__head reveal">
+      <p class="kicker">Our Services</p>
+      <h2 class="h2">Dependable technology solutions, end to end.</h2>
+    </div>
+    <div class="cards">
+      <article class="card card--eng reveal">
+        <div class="card__media card--eng-m">
+          <svg class="cm" viewBox="0 0 300 124" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="gEng" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1830"/><stop offset="1" stop-color="#0d2a22"/></linearGradient></defs>
+            <rect width="300" height="124" fill="url(#gEng)"/>
+            <circle cx="24" cy="24" r="3.4" fill="#ff5f57"/><circle cx="37" cy="24" r="3.4" fill="#febc2e"/><circle cx="50" cy="24" r="3.4" fill="#28c840"/>
+            <g fill="#00da83">
+              <rect class="el e1" x="24" y="46" width="150" height="7" rx="3.5"/>
+              <rect class="el e2" x="44" y="64" width="120" height="7" rx="3.5"/>
+              <rect class="el e3" x="44" y="82" width="170" height="7" rx="3.5"/>
+              <rect class="el e4" x="24" y="100" width="92" height="7" rx="3.5"/>
+            </g>
+          </svg>
+        </div>
+        <h3>Enterprise Software Engineering</h3>
+        <p>Custom applications, CRM, and mobile builds that support mission goals and surface the insights that drive decisions.</p>
+      </article>
+
+      <article class="card card--infra reveal">
+        <div class="card__media card--infra-m">
+          <svg class="cm" viewBox="0 0 300 124" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="gInf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1830"/><stop offset="1" stop-color="#11203f"/></linearGradient></defs>
+            <rect width="300" height="124" fill="url(#gInf)"/>
+            <g stroke="#3B4AA1" stroke-width="2"><line x1="150" y1="48" x2="70" y2="98"/><line x1="150" y1="48" x2="150" y2="98"/><line x1="150" y1="48" x2="230" y2="98"/></g>
+            <path d="M122 50a20 20 0 0 1 40-5 15 15 0 0 1 3 29h-41a12 12 0 0 1-2-24z" fill="rgba(0,218,131,.18)" stroke="#00da83" stroke-width="2"/>
+            <g fill="#0f1830" stroke="#00da83" stroke-width="2"><rect x="56" y="98" width="28" height="20" rx="4"/><rect x="136" y="98" width="28" height="20" rx="4"/><rect x="216" y="98" width="28" height="20" rx="4"/></g>
+            <circle class="pkt p1" r="3.6" fill="#00da83"/><circle class="pkt p2" r="3.6" fill="#00da83"/><circle class="pkt p3" r="3.6" fill="#00da83"/>
+          </svg>
+        </div>
+        <h3>Infrastructure &amp; Platform Innovation</h3>
+        <p>Cloud services, system integration and DevOps automation that right-size resources and accelerate performance.</p>
+      </article>
+
+      <article class="card card--data reveal">
+        <div class="card__media card--data-m">
+          <svg class="cm" viewBox="0 0 300 124" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="gDat" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1830"/><stop offset="1" stop-color="#13202a"/></linearGradient></defs>
+            <rect width="300" height="124" fill="url(#gDat)"/>
+            <g fill="#00da83">
+              <rect class="bar b1" x="44"  y="44" width="26" height="60" rx="4"/>
+              <rect class="bar b2" x="90"  y="32" width="26" height="72" rx="4"/>
+              <rect class="bar b3" x="136" y="60" width="26" height="44" rx="4"/>
+              <rect class="bar b4" x="182" y="24" width="26" height="80" rx="4"/>
+              <rect class="bar b5" x="228" y="50" width="26" height="54" rx="4"/>
+            </g>
+            <polyline class="trend" points="57,48 103,38 149,66 195,30 241,56" fill="none" stroke="#7CF2C4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="32" y1="104" x2="266" y2="104" stroke="rgba(255,255,255,.22)"/>
+          </svg>
+        </div>
+        <h3>Data &amp; Analytics</h3>
+        <p>Data engineering, BI, ML and governance that turn raw data into a reliable, decision-ready asset.</p>
+      </article>
+
+      <article class="card card--sec reveal">
+        <div class="card__media card--sec-m">
+          <svg class="cm" viewBox="0 0 300 124" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="gSec" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1830"/><stop offset="1" stop-color="#0d2a22"/></linearGradient>
+              <clipPath id="shieldClip"><path d="M150 26l46 16v26c0 28-20 42-46 50-26-8-46-22-46-50V42z"/></clipPath>
+            </defs>
+            <rect width="300" height="124" fill="url(#gSec)"/>
+            <path d="M150 26l46 16v26c0 28-20 42-46 50-26-8-46-22-46-50V42z" fill="rgba(0,218,131,.14)" stroke="#00da83" stroke-width="2.5"/>
+            <polyline class="check" points="132,68 145,81 170,54" fill="none" stroke="#00da83" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect class="scan" x="104" y="26" width="92" height="6" fill="rgba(0,218,131,.55)" clip-path="url(#shieldClip)"/>
+          </svg>
+        </div>
+        <h3>Information Security</h3>
+        <p>Cybersecurity, data privacy and SOC services that protect agency assets in real time.</p>
+      </article>
+
+      <article class="card card--ai reveal">
+        <div class="card__media card--ai-m">
+          <svg class="cm" viewBox="0 0 300 124" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="gAi" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1830"/><stop offset="1" stop-color="#171a3a"/></linearGradient></defs>
+            <rect width="300" height="124" fill="url(#gAi)"/>
+            <g class="ai-edges" stroke="#3B4AA1" stroke-width="1.5">
+              <line x1="60" y1="42" x2="150" y2="28"/><line x1="60" y1="42" x2="150" y2="63"/>
+              <line x1="60" y1="84" x2="150" y2="63"/><line x1="60" y1="84" x2="150" y2="98"/>
+              <line x1="150" y1="28" x2="240" y2="42"/><line x1="150" y1="63" x2="240" y2="42"/>
+              <line x1="150" y1="63" x2="240" y2="84"/><line x1="150" y1="98" x2="240" y2="84"/>
+            </g>
+            <g fill="#00da83">
+              <circle class="nd" cx="60"  cy="42" r="6"/>
+              <circle class="nd" cx="60"  cy="84" r="6"/>
+              <circle class="nd" cx="150" cy="28" r="6"/>
+              <circle class="nd" cx="150" cy="63" r="6"/>
+              <circle class="nd" cx="150" cy="98" r="6"/>
+              <circle class="nd" cx="240" cy="42" r="6"/>
+              <circle class="nd" cx="240" cy="84" r="6"/>
+            </g>
+          </svg>
+        </div>
+        <h3>Artificial Intelligence</h3>
+        <p>Generative AI, computer vision and text analytics that drive transformation and human-AI collaboration.</p>
+      </article>
+
+      <article class="card card--consult reveal">
+        <div class="card__media card--consult-m">
+          <svg class="cm" viewBox="0 0 300 124" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="gCon" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f1830"/><stop offset="1" stop-color="#13202a"/></linearGradient></defs>
+            <rect width="300" height="124" fill="url(#gCon)"/>
+            <g transform="translate(126,58)"><g class="gear g-a">
+              <circle r="22" fill="none" stroke="#00da83" stroke-width="9" stroke-dasharray="7 7"/>
+              <circle r="11" fill="none" stroke="#00da83" stroke-width="3"/>
+            </g></g>
+            <g transform="translate(176,86)"><g class="gear g-b">
+              <circle r="15" fill="none" stroke="#7CF2C4" stroke-width="7" stroke-dasharray="6 6"/>
+              <circle r="7" fill="none" stroke="#7CF2C4" stroke-width="2.5"/>
+            </g></g>
+          </svg>
+        </div>
+        <h3>Technology Consulting</h3>
+        <p>Digital transformation, software consulting and agile delivery from experienced advisors.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Salesforce showcase moved to its own tab: salesforce.html -->
+
+  <!-- ===== VIDEO SHOWCASE ===== -->
+  <section class="videoshow" id="video">
+    <span class="videoshow__blob vb1"></span>
+    <span class="videoshow__blob vb2"></span>
+    <span class="videoshow__blob vb3"></span>
+    <div class="videoshow__grid"></div>
+    <div class="videoshow__frame reveal">
+      <video class="videoshow__video" autoplay muted loop playsinline controls>
+        <source src="img/1781765223799.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="section" id="process">
+    <div class="section__head reveal">
+      <p class="kicker">Our Process</p>
+      <h2 class="h2">Changing uncertainty to dependability.</h2>
+    </div>
+    <div class="process">
+      <div class="process__step reveal">
+        <span class="process__num">01</span>
+        <h3>Thinking &amp; Problem Solving</h3>
+        <p>Decades of experience and thousands of hours of problem solving go into making future-proof technology.</p>
+      </div>
+      <div class="process__step reveal">
+        <span class="process__num">02</span>
+        <h3>Development Lifecycle</h3>
+        <p>Delivering technical solutions is in our DNA — no surprise endings when it comes to product development.</p>
+      </div>
+      <div class="process__step reveal">
+        <span class="process__num">03</span>
+        <h3>Engagement &amp; Experience</h3>
+        <p>We know outcomes before the build starts, creating experiences that end with powerful impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== METRICS ===== -->
+  <section class="metrics">
+    <div class="metric reveal"><span class="metric__num" data-to="20">0</span><span class="metric__plus">+</span><p>Years delivering</p></div>
+    <div class="metric reveal"><span class="metric__num" data-to="500">0</span><span class="metric__plus">+</span><p>Projects shipped</p></div>
+    <div class="metric reveal"><span class="metric__num" data-to="98">0</span><span class="metric__plus">%</span><p>Avg. test coverage</p></div>
+    <div class="metric reveal"><span class="metric__num" data-to="5">0</span><span class="metric__plus"> </span><p>US locations</p></div>
+  </section>
+
+  <!-- ===== NATIONAL REACH ===== -->
+  <section class="reach" id="reach">
+    <div class="reach__head reveal">
+      <p class="kicker kicker--green">National Reach</p>
+      <h2>Serving agencies from coast to coast.</h2>
+      <p class="reach__sub">Federal, state and local partners across the country trust PruTech to modernize the secure systems citizens rely on every day.</p>
+      <div class="reach__legend">
+        <span><i class="dot dot--federal"></i>Federal</span>
+        <span><i class="dot dot--state"></i>State</span>
+        <span><i class="dot dot--local"></i>Local</span>
+      </div>
+    </div>
+    <div class="reach__map reveal">
+      <svg id="reachMap" role="img" aria-label="Map of the United States showing PruTech client locations"></svg>
+    </div>
+  </section>
+
+  <!-- ===== CAREERS ===== -->
+  <section class="careers" id="careers">
+    <div class="careers__inner">
+      <div class="careers__text reveal">
+        <p class="kicker kicker--green">Careers at PruTech</p>
+        <h2>Build the technology<br/>that moves America forward.</h2>
+        <p class="careers__sub">What's in your code?</p>
+        <p class="careers__txt">Join a team modernizing the secure systems behind essential public services — where your work serves millions and your career grows with the mission.</p>
+        <a href="login.html" class="btn">Join the mission</a>
+      </div>
+      <div class="careers__visual reveal" aria-hidden="true">
+        <canvas class="flag-canvas" id="flagCanvas"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <div class="contact__lead reveal">
+        <p class="kicker kicker--green">Start the conversation</p>
+        <h2 class="cta__title">Ready to modernize<br/>your agency?</h2>
+        <p class="contact__sub">Bring us your toughest mission challenge. We'll bring a team that has delivered secure, compliant technology for federal, state and local government for over 20 years — and we'll tell you honestly how we would approach it.</p>
+        <ul class="contact__points">
+          <li>Public-sector delivery across five U.S. hubs</li>
+          <li>Secure, compliant builds (FedRAMP &amp; FISMA aware)</li>
+          <li>A senior team from day one — no hand-offs</li>
+        </ul>
+      </div>
+
+      <div class="contact__card reveal">
+        <h3>Get in touch</h3>
+        <a class="contact__row" href="mailto:Partha.Marreddy@prutech.com?subject=PruTech%20%E2%80%94%20Project%20inquiry">
+          <span>Email</span><b>Partha.Marreddy@prutech.com</b>
+        </a>
+        <div class="contact__row"><span>Headquarters</span><b>Iselin, NJ</b></div>
+        <div class="contact__row"><span>Also in</span><b>New York · Charlotte · Washington, D.C.</b></div>
+        <div class="contact__row"><span>Response</span><b>Within 1 business day</b></div>
+        <a href="mailto:Partha.Marreddy@prutech.com?subject=PruTech%20%E2%80%94%20Project%20inquiry" class="btn btn--lg">Start the conversation</a>
+        <p class="contact__note">Prefer a call? Mention a good time and we'll set it up.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__cols">
+      <div class="footer__brand">
+        <img class="footer__logo" src="img/prutech-logo-white.svg" alt="PruTech IT Solutions" />
+        <p class="tagline"><em>The Right Team.</em> <strong>The Right Outcomes.</strong>™</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#">About</a><a href="#">Careers</a><a href="#">Partnerships</a><a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="#services">Software Engineering</a><a href="#services">Cloud &amp; Platform</a><a href="#services">Data &amp; AI</a><a href="#services">Cybersecurity</a>
+      </div>
+      <div>
+        <h4>Locations</h4>
+        <a href="#">Iselin, NJ</a><a href="#">New York, NY</a><a href="#">Charlotte, NC</a><a href="#">Washington, D.C.</a>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 PruTech Solutions, Inc. All rights reserved. · Privacy Policy</div>
+  </footer>
+
+  <script src="js/case-studies.js"></script>
+  <script src="js/brand-main.js"></script>
+  <script src="js/world-mask.js" defer></script>
+  <script src="js/hero-sphere.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salesforce — PruTech IT Solutions</title>
+  <meta name="description" content="PruTech Salesforce & platform engineering for government — solutions, accelerators and compliant delivery. Request a demo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/brand.css" />
+  <link rel="stylesheet" href="css/helix.css" />
+  <link rel="stylesheet" href="css/strip.css" />
+  <link rel="stylesheet" href="css/intro.css" />
+  <script src="js/intro.js"></script>
+  <noscript><style>.pt-intro{display:none}</style></noscript>
+</head>
+<body>
+
+  <!-- ===== BRAND INTRO ===== -->
+  <div class="pt-intro" id="ptIntro" role="presentation">
+    <video class="pt-intro__video" muted playsinline autoplay preload="auto"
+           disablepictureinpicture controlslist="nodownload noplaybackrate noremoteplayback">
+      <source src="img/intro-reveal.webm" type="video/webm" />
+      <source src="img/intro-reveal.mp4" type="video/mp4" />
+    </video>
+    <button class="pt-intro__skip" type="button" aria-label="Skip intro">Skip</button>
+  </div>
+
+
+  <!-- ===== NAV ===== -->
+  <header class="nav scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="prutech-it-solutions.html" class="nav__logo nav__logo--img">
+        <img src="img/prutech-logo-white.svg" alt="PruTech IT Solutions" />
+      </a>
+      <nav class="nav__links">
+        <a href="prutech-it-solutions.html#services">Services</a>
+        <a href="salesforce.html">Salesforce</a>
+        <a href="prutech-it-solutions.html#process">Process</a>
+        <a href="prutech-it-solutions.html#work">Work</a>
+        <a href="prutech-it-solutions.html#contact">Contact</a>
+      </nav>
+      <a href="login.html" class="btn btn--sm">Login</a>
+      <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===== SALESFORCE HERO ===== -->
+  <section class="sf-hero">
+    <div class="sf-hero__inner reveal">
+      <p class="kicker kicker--green">Salesforce &amp; Platform Engineering</p>
+      <h1>Salesforce solutions,<br/>built for government.</h1>
+      <p class="sf-hero__lead">From case management to citizen self-service, we design, build and ship secure Salesforce solutions and accelerators for federal, state and local agencies — then keep them running.</p>
+      <a href="#agentforce" class="btn">Explore Agentforce</a>
+    </div>
+  </section>
+
+  <!-- ===== AGENTFORCE ===== -->
+  <section class="agentforce" id="agentforce">
+    <div class="agentforce__inner">
+      <div class="agentforce__text reveal">
+        <p class="kicker kicker--green">Agentforce</p>
+        <h2 class="h2 h2--light">Autonomous AI agents for public service.</h2>
+        <p class="showcase__lead">
+          We design and deploy trusted, guardrailed Agentforce agents on Salesforce that
+          resolve citizen requests, triage cases and assist your staff around the clock —
+          grounded in your agency's data and policies, with humans always in the loop.
+        </p>
+        <ul class="ticks">
+          <li>Citizen self-service agents that resolve common requests 24/7</li>
+          <li>Case triage and routing with built-in guardrails</li>
+          <li>Agent assist for faster, more accurate staff responses</li>
+          <li>Grounded in your data with full audit trails and oversight</li>
+        </ul>
+        <a href="prutech-it-solutions.html#contact" class="btn">Build your agent</a>
+      </div>
+
+      <div class="agentforce__visual reveal">
+        <div class="agent-stage">
+          <span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span>
+          <span class="spark s4"></span><span class="spark s5"></span><span class="spark s6"></span>
+          <img class="agent-bot" src="img/Flying-Agentforce-Agent.png" alt="Agentforce AI agent" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CODE SHOWCASE ===== -->
+  <section class="showcase" id="showcase">
+    <div class="showcase__inner">
+      <div class="showcase__text reveal">
+        <p class="kicker kicker--light">Engineered Live</p>
+        <h2 class="h2 h2--light">From configuration to secure deployment.</h2>
+        <p class="showcase__lead">
+          On Salesforce we build mission-critical solutions for public-sector
+          agencies — shipped through a governed <b>CI/CD</b> pipeline.
+          Watch a release take shape: Apex and Lightning Web Components,
+          automated tests and a compliant promotion to production.
+        </p>
+        <ul class="ticks">
+          <li>Apex &amp; Lightning Web Component development</li>
+          <li>CI/CD pipeline with automated promotions</li>
+          <li>Automated testing &amp; compliant deployments</li>
+          <li>24/7 managed support &amp; optimization</li>
+        </ul>
+      </div>
+
+      <div class="showcase__visual reveal">
+        <div class="editor">
+          <div class="editor__bar">
+            <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            <span class="editor__tabs"><b>AccountService.cls</b> · caseAgent.js</span>
+          </div>
+          <div class="editor__body">
+            <pre class="editor__code"><code id="editorStream"></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CI/CD PIPELINE ===== -->
+  <section class="cicd" id="cicd">
+    <div class="cicd__head reveal">
+      <p class="kicker kicker--green">Salesforce DevOps</p>
+      <h2 class="h2 h2--light">CI/CD PIPELINE</h2>
+    </div>
+
+    <div class="cicd-grid">
+      <div class="cicd-side cicd-side--l reveal">
+        <div class="cicd-feat"><b>Fully automated</b><span>Every change built, tested and promoted without manual steps.</span></div>
+        <div class="cicd-feat"><b>Full lifecycle</b><span>Plan, build, test, deploy and monitor in one flow.</span></div>
+      </div>
+
+      <div class="cicd-stage reveal">
+        <span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span>
+        <span class="spark s4"></span><span class="spark s5"></span><span class="spark s6"></span>
+        <svg class="loop-svg" viewBox="0 0 600 320" aria-hidden="true">
+          <defs>
+            <linearGradient id="loopGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#00da83"/><stop offset=".5" stop-color="#1ff2a0"/><stop offset="1" stop-color="#3B8DFF"/>
+            </linearGradient>
+          </defs>
+          <path d="M300,160 C380,60 540,60 540,160 C540,260 380,260 300,160 C220,60 60,60 60,160 C60,260 220,260 300,160 Z" fill="none" stroke="rgba(255,255,255,.07)" stroke-width="34" stroke-linecap="round"/>
+          <path class="loop-flow" d="M300,160 C380,60 540,60 540,160 C540,260 380,260 300,160 C220,60 60,60 60,160 C60,260 220,260 300,160 Z" fill="none" stroke="url(#loopGrad)" stroke-width="6" stroke-linecap="round" stroke-dasharray="26 22"/>
+          <g class="loop-stage" text-anchor="middle">
+            <text x="155" y="46">CREATE</text>
+            <text x="70" y="100">PLAN</text>
+            <text x="70" y="240">VERIFY</text>
+            <text x="155" y="296">PACKAGE</text>
+            <text x="445" y="46">DEPLOY</text>
+            <text x="530" y="100">RELEASE</text>
+            <text x="530" y="240">ARCHITECT</text>
+            <text x="445" y="296">MONITOR</text>
+          </g>
+          <circle class="loop-dot" r="7" fill="#00da83">
+            <animateMotion dur="7s" repeatCount="indefinite" path="M300,160 C380,60 540,60 540,160 C540,260 380,260 300,160 C220,60 60,60 60,160 C60,260 220,260 300,160 Z"/>
+          </circle>
+          <circle class="loop-dot" r="5" fill="#3B8DFF">
+            <animateMotion dur="7s" begin="-3.5s" repeatCount="indefinite" path="M300,160 C380,60 540,60 540,160 C540,260 380,260 300,160 C220,60 60,60 60,160 C60,260 220,260 300,160 Z"/>
+          </circle>
+        </svg>
+      </div>
+
+      <div class="cicd-side cicd-side--r reveal">
+        <div class="cicd-feat"><b>Faster releases</b><span>Less time, complexity and errors every cycle.</span></div>
+        <div class="cicd-feat"><b>Any scale</b><span>Across orgs, sandboxes, branches and teams.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOLUTION BRIEFS ===== -->
+  <section class="section" id="briefs">
+    <div class="helix-scroll">
+      <div class="helix-stage">
+        <div class="section__head helix__head reveal">
+          <p class="kicker">Government Solution Briefs</p>
+          <h2 class="h2">Deeper insight into what we've built.</h2>
+        </div>
+
+        <div class="slide-filters" id="briefFilters" role="tablist" aria-label="Filter projects by government level"></div>
+
+        <div class="brief-marquee">
+      <div class="brief-marquee__track">
+        <div class="helix__spine"><i></i><span></span></div>
+        <a class="brief" data-slug="aging-services" href="sf-projects/aging-services.html">
+          <div class="brief__top"><span class="brief__badge">State &amp; Local</span><span class="brief__plat">Gov Cloud Plus</span></div>
+          <h3>Aging Services CRM</h3>
+          <p class="brief__tag">Unified coordination across provider networks — intake to compliance.</p>
+          <div class="brief__stats"><div><b>834</b><span>Providers</span></div><div><b>300K</b><span>Seniors</span></div></div>
+          <span class="brief__link">View project →</span>
+        </a>
+        <a class="brief" data-slug="call-center" href="sf-projects/call-center.html">
+          <div class="brief__top"><span class="brief__badge">Federal</span><span class="brief__plat">Service Cloud</span></div>
+          <h3>Call Center Operations</h3>
+          <p class="brief__tag">Unified case management and omnichannel routing for service delivery.</p>
+          <div class="brief__stats"><div><b>Omni</b><span>Routing</span></div><div><b>Real-time</b><span>Dashboards</span></div></div>
+          <span class="brief__link">View project →</span>
+        </a>
+        <a class="brief" data-slug="early-childhood" href="sf-projects/early-childhood.html">
+          <div class="brief__top"><span class="brief__badge">Education</span><span class="brief__plat">Public Sector</span></div>
+          <h3>Early Childhood Education</h3>
+          <p class="brief__tag">Provider-to-student management: contracts, enrollment, invoicing.</p>
+          <div class="brief__stats"><div><b>5M+</b><span>Records</span></div><div><b>18</b><span>Modules</span></div></div>
+          <span class="brief__link">View project →</span>
+        </a>
+        <a class="brief" data-slug="evidence-tracking" href="sf-projects/evidence-tracking.html">
+          <div class="brief__top"><span class="brief__badge">Justice</span><span class="brief__plat">Service Cloud</span></div>
+          <h3>Evidence Management &amp; Tracking</h3>
+          <p class="brief__tag">Full chain of custody with an anonymous, PIN-based victim portal.</p>
+          <div class="brief__stats"><div><b>100%</b><span>Compliance</span></div><div><b>7,000+</b><span>Items</span></div></div>
+          <span class="brief__link">View project →</span>
+        </a>
+        <a class="brief" data-slug="housing-placement" href="sf-projects/housing-placement.html">
+          <div class="brief__top"><span class="brief__badge">Housing</span><span class="brief__plat">Public Sector</span></div>
+          <h3>Affordable Housing Placement</h3>
+          <p class="brief__tag">Developers, agencies and residents in one application-to-placement flow.</p>
+          <div class="brief__stats"><div><b>99%</b><span>Faster lottery</span></div><div><b>50%</b><span>Participation</span></div></div>
+          <span class="brief__link">View project →</span>
+        </a>
+        <a class="brief" data-slug="pbm-licensing" href="sf-projects/pbm-licensing.html">
+          <div class="brief__top"><span class="brief__badge">Regulatory</span><span class="brief__plat">Public Sector</span></div>
+          <h3>PBM Licensing &amp; Permitting</h3>
+          <p class="brief__tag">Digital licensing with two-level reviews and automated compliance.</p>
+          <div class="brief__stats"><div><b>85%</b><span>Faster</span></div><div><b>90%</b><span>Less manual</span></div></div>
+          <span class="brief__link">View project →</span>
+        </a>
+        <a class="brief" data-slug="public-engagement" href="sf-projects/public-engagement.html">
+          <div class="brief__top"><span class="brief__badge">Public Health</span><span class="brief__plat">Salesforce</span></div>
+          <h3>Case Management &amp; Canvassing</h3>
+          <p class="brief__tag">Field outreach with offline mobile mapping and full case lifecycle.</p>
+          <div class="brief__stats"><div><b>65%</b><span>Faster entry</span></div><div><b>290+</b><span>Users</span></div></div>
+          <span class="brief__link">View project →</span>
+        </a>
+        <a class="brief" data-slug="regulatory-licensing" href="sf-projects/regulatory-licensing.html">
+          <div class="brief__top"><span class="brief__badge">Regulatory</span><span class="brief__plat">Experience Cloud</span></div>
+          <h3>Regulatory Licensing Portal</h3>
+          <p class="brief__tag">Self-service licensing with template-based new license types.</p>
+          <div class="brief__stats"><div><b>Dynamic</b><span>Forms</span></div><div><b>Online</b><span>Payments</span></div></div>
+          <span class="brief__link">View project →</span>
+        </a>
+        <!-- duplicate set for seamless looping -->
+        <a class="brief" data-slug="aging-services" href="sf-projects/aging-services.html" aria-hidden="true" tabindex="-1">
+          <div class="brief__top"><span class="brief__badge">State &amp; Local</span><span class="brief__plat">Gov Cloud Plus</span></div>
+          <h3>Aging Services CRM</h3>
+          <p class="brief__tag">Unified coordination across provider networks — intake to compliance.</p>
+          <div class="brief__stats"><div><b>834</b><span>Providers</span></div><div><b>300K</b><span>Seniors</span></div></div>
+          <span class="brief__link">View project →</span>
+        </a>
+        <a class="brief" data-slug="call-center" href="sf-projects/call-center.html" aria-hidden="true" tabindex="-1">
+          <div class="brief__top"><span class="brief__badge">Federal</span><span class="brief__plat">Service Cloud</span></div>
+          <h3>Call Center Operations</h3>
+          <p class="brief__tag">Unified case management and omnichannel routing for service delivery.</p>
+          <div class="brief__stats"><div><b>Omni</b><span>Routing</span></div><div><b>Real-time</b><span>Dashboards</span></div></div>
+          <span class="brief__link">View project →</span>
+        </a>
+        <a class="brief" data-slug="early-childhood" href="sf-projects/early-childhood.html" aria-hidden="true" tabindex="-1">
+          <div class="brief__top"><span class="brief__badge">Education</span><span class="brief__plat">Public Sector</span></div>
+          <h3>Early Childhood Education</h3>
+          <p class="brief__tag">Provider-to-student management: contracts, enrollment, invoicing.</p>
+          <div class="brief__stats"><div><b>5M+</b><span>Records</span></div><div><b>18</b><span>Modules</span></div></div>
+          <span class="brief__link">View project →</span>
+        </a>
+        <a class="brief" data-slug="evidence-tracking" href="sf-projects/evidence-tracking.html" aria-hidden="true" tabindex="-1">
+          <div class="brief__top"><span class="brief__badge">Justice</span><span class="brief__plat">Service Cloud</span></div>
+          <h3>Evidence Management &amp; Tracking</h3>
+          <p class="brief__tag">Full chain of custody with an anonymous, PIN-based victim portal.</p>
+          <div class="brief__stats"><div><b>100%</b><span>Compliance</span></div><div><b>7,000+</b><span>Items</span></div></div>
+          <span class="brief__link">View project →</span>
+        </a>
+        <a class="brief" data-slug="housing-placement" href="sf-projects/housing-placement.html" aria-hidden="true" tabindex="-1">
+          <div class="brief__top"><span class="brief__badge">Housing</span><span class="brief__plat">Public Sector</span></div>
+          <h3>Affordable Housing Placement</h3>
+          <p class="brief__tag">Developers, agencies and residents in one application-to-placement flow.</p>
+          <div class="brief__stats"><div><b>99%</b><span>Faster lottery</span></div><div><b>50%</b><span>Participation</span></div></div>
+          <span class="brief__link">View project →</span>
+        </a>
+        <a class="brief" data-slug="pbm-licensing" href="sf-projects/pbm-licensing.html" aria-hidden="true" tabindex="-1">
+          <div class="brief__top"><span class="brief__badge">Regulatory</span><span class="brief__plat">Public Sector</span></div>
+          <h3>PBM Licensing &amp; Permitting</h3>
+          <p class="brief__tag">Digital licensing with two-level reviews and automated compliance.</p>
+          <div class="brief__stats"><div><b>85%</b><span>Faster</span></div><div><b>90%</b><span>Less manual</span></div></div>
+          <span class="brief__link">View project →</span>
+        </a>
+        <a class="brief" data-slug="public-engagement" href="sf-projects/public-engagement.html" aria-hidden="true" tabindex="-1">
+          <div class="brief__top"><span class="brief__badge">Public Health</span><span class="brief__plat">Salesforce</span></div>
+          <h3>Case Management &amp; Canvassing</h3>
+          <p class="brief__tag">Field outreach with offline mobile mapping and full case lifecycle.</p>
+          <div class="brief__stats"><div><b>65%</b><span>Faster entry</span></div><div><b>290+</b><span>Users</span></div></div>
+          <span class="brief__link">View project →</span>
+        </a>
+        <a class="brief" data-slug="regulatory-licensing" href="sf-projects/regulatory-licensing.html" aria-hidden="true" tabindex="-1">
+          <div class="brief__top"><span class="brief__badge">Regulatory</span><span class="brief__plat">Experience Cloud</span></div>
+          <h3>Regulatory Licensing Portal</h3>
+          <p class="brief__tag">Self-service licensing with template-based new license types.</p>
+          <div class="brief__stats"><div><b>Dynamic</b><span>Forms</span></div><div><b>Online</b><span>Payments</span></div></div>
+          <span class="brief__link">View project →</span>
+        </a>
+      </div>
+          <div class="helix__hud">
+            <p class="helix__count"><b>01</b> / 08</p>
+            <p class="helix__hint">Scroll to explore</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- project popup -->
+    <div class="modal" id="briefModal" hidden>
+      <div class="modal__backdrop" data-close></div>
+      <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Project details">
+        <button class="modal__close" data-close aria-label="Close">&times;</button>
+        <div id="briefModalBody"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS STRIP (continuous line) ===== -->
+  <section class="strip" id="briefStrip">
+    <div class="strip__head reveal">
+      <p class="kicker kicker--green">Every Engagement</p>
+      <h2 class="h2 h2--light">All eight, at a glance.</h2>
+    </div>
+    <div class="strip-marquee">
+      <div class="strip-marquee__track" id="stripTrack"></div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta" id="contact">
+    <div class="reveal">
+      <h2 class="cta__title">See a Salesforce accelerator in action.</h2>
+      <p class="cta__sub">Tell us about your mission — we'll tailor a demo to your agency.</p>
+      <a href="mailto:Partha.Marreddy@prutech.com" class="btn btn--lg">Request a demo</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__cols">
+      <div class="footer__brand">
+        <img class="footer__logo" src="img/prutech-logo-white.svg" alt="PruTech IT Solutions" />
+        <p class="tagline"><em>The Right Team.</em> <strong>The Right Outcomes.</strong>™</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#">About</a><a href="#">Careers</a><a href="#">Partnerships</a><a href="prutech-it-solutions.html#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="prutech-it-solutions.html#services">Software Engineering</a><a href="prutech-it-solutions.html#services">Cloud &amp; Platform</a><a href="prutech-it-solutions.html#services">Data &amp; AI</a><a href="salesforce.html">Salesforce</a>
+      </div>
+      <div>
+        <h4>Locations</h4>
+        <a href="#">Iselin, NJ</a><a href="#">New York, NY</a><a href="#">Charlotte, NC</a><a href="#">Washington, D.C.</a>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 PruTech Solutions, Inc. All rights reserved. · Privacy Policy</div>
+  </footer>
+
+  <script src="js/case-studies.js"></script>
+  <script src="js/brand-main.js"></script>
+  <script src="js/sf-modal.js"></script>
+  <script src="js/helix.js" defer></script>
+  <script src="js/strip.js" defer></script>
+</body>
+</html>
