@@ -1,0 +1,19 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "rewrite": "/prutech-it-solutions.html"
+    }
+  ],
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "mimeTypes": {
+    ".webm": "video/webm",
+    ".mp4": "video/mp4",
+    ".svg": "image/svg+xml",
+    ".json": "application/json"
+  }
+}
