@@ -488,36 +488,36 @@ a.contact__row:hover b{color:var(--brand-green);}
    - a boxed, centered card that sits naturally inside the page
    - caption lives in a frosted panel over the image, bottom-left
    ===================================================================== */
-.work{padding:4.5rem 1.5rem;}
-.slider{max-width:960px;margin:0 auto;}
-.slider__track{height:600px;border-radius:20px;}
+.work{padding:5rem 1.5rem;}
+.slider{max-width:1140px;margin:0 auto;}
+.slider__track{height:720px;border-radius:20px;}
 
 /* image fills the compact card, cropped rather than letterboxed */
 .slide__bg{background-color:var(--brand-dark-blue);background-size:cover;}
 
-.slide{padding:1.6rem;}
-.slide__body{max-width:420px;padding:1.2rem 1.4rem;border-radius:14px;}
-.slide__title{font-size:clamp(1.1rem,2vw,1.45rem);margin-bottom:.5rem;}
-.slide__desc{font-size:.9rem;max-width:380px;margin-bottom:1rem;}
+.slide{padding:2rem;}
+.slide__body{max-width:480px;padding:1.4rem 1.6rem;border-radius:14px;}
+.slide__title{font-size:clamp(1.3rem,2.4vw,1.75rem);margin-bottom:.6rem;}
+.slide__desc{font-size:.98rem;max-width:440px;margin-bottom:1.1rem;}
 .slide__cat{padding:.35rem .65rem;margin-bottom:.6rem;}
 
-.slider__arrow{width:40px;height:40px;}
-.slider__arrow--prev{left:14px;}
-.slider__arrow--next{right:14px;}
-.slider__dots{position:absolute;left:0;right:0;bottom:1rem;margin:0;z-index:6;}
+.slider__arrow{width:44px;height:44px;}
+.slider__arrow--prev{left:18px;}
+.slider__arrow--next{right:18px;}
+.slider__dots{position:absolute;left:0;right:0;bottom:1.2rem;margin:0;z-index:6;}
 
 @media(max-width:820px){
   .slider{max-width:100%;}
-  .slider__track{height:520px;}
-  .slide__body{max-width:360px;}
+  .slider__track{height:620px;}
+  .slide__body{max-width:400px;}
 }
 @media(max-width:640px){
-  .slider__track{height:420px;border-radius:16px;}
-  .slide{padding:1.2rem;}
-  .slide__body{max-width:100%;padding:1rem 1.1rem;}
-  .slide__title{font-size:1.05rem;}
+  .slider__track{height:480px;border-radius:16px;}
+  .slide{padding:1.4rem;}
+  .slide__body{max-width:100%;padding:1.1rem 1.2rem;}
+  .slide__title{font-size:1.15rem;}
   .slide__desc{
-    font-size:.85rem;margin-bottom:.8rem;
+    font-size:.88rem;margin-bottom:.9rem;
     display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;
   }
 }
