@@ -22,6 +22,11 @@ jobs:
     if: github.event_name == 'push' || github.event.action != 'closed'
     runs-on: ubuntu-latest
     name: Build and deploy
+    # pull-requests: write is what lets Azure post the preview URL as a
+    # comment on the PR. Without it the deploy still succeeds, but silently.
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
         with:
